@@ -1,0 +1,177 @@
+
+:root {
+    --bg-color: #040311;
+    --secondary-color: #4d4c4c;
+    --font-family: 'Arial, sans-serif';
+    --base-font-size: 16px;
+    --primary-color: #a8834f; 
+    --accent-color: #586f8f; 
+}
+
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--base-font-size);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: #020202;
+}
+
+header {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header .logo {
+    display: block;
+    margin: 0.5rem auto;
+    width: 150px; 
+    height: auto; 
+    max-height: 150px;
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 15px; 
+    background-color: var(--secondary-color);
+}
+
+.project {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px; 
+    background-color: var(--primary-color);
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project img {
+        max-width: 100%;
+    }
+}
+
+/* Advanced Styling */
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form input, form textarea {
+    border-radius: 5px; 
+    border: 1px solid var(--primary-color);
+    background-color: #444444;
+    color: #fff;
+}
+
+form button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; }
+
+form button:hover {
+    background-color: var(--accent-color);
+}
+
+.centered {
+    text-align: center;
+}
+
+.centered p {
+    margin: 0 auto;
+}
+
+body.dark-mode {
+    background-color: var(--bg-color);
+    color: #fff;
+}
+
+body.dark-mode header {
+    background-color: var(--secondary-color);
+}
+
+body.dark-mode nav ul li a {
+    color: var(--accent-color);
+}
+
+body.dark-mode footer {
+    background-color: var(--secondary-color);
+}
